@@ -14,6 +14,12 @@
 		D3E370661CA3C7C600A9C333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E370641CA3C7C600A9C333 /* LaunchScreen.storyboard */; };
 		D3E370711CA3C7C600A9C333 /* NOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E370701CA3C7C600A9C333 /* NOSTests.swift */; };
 		D3E3707C1CA3C7C600A9C333 /* NOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3707B1CA3C7C600A9C333 /* NOSUITests.swift */; };
+		D3E370901CA3C7FD00A9C333 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E3708F1CA3C7FD00A9C333 /* NotificationCenter.framework */; };
+		D3E370931CA3C7FD00A9C333 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E370921CA3C7FD00A9C333 /* TodayViewController.swift */; };
+		D3E370961CA3C7FD00A9C333 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E370941CA3C7FD00A9C333 /* MainInterface.storyboard */; };
+		D3E3709A1CA3C7FD00A9C333 /* NOSToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3E370A01CA3C8DE00A9C333 /* SonosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3709F1CA3C8DE00A9C333 /* SonosController.swift */; };
+		D3E370A11CA3C8DE00A9C333 /* SonosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3709F1CA3C8DE00A9C333 /* SonosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = D3E370571CA3C7C600A9C333;
 			remoteInfo = NOS;
 		};
+		D3E370981CA3C7FD00A9C333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E370501CA3C7C600A9C333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E3708C1CA3C7FD00A9C333;
+			remoteInfo = NOSToday;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3E3709E1CA3C7FD00A9C333 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3E3709A1CA3C7FD00A9C333 /* NOSToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D3E370581CA3C7C600A9C333 /* NOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +74,12 @@
 		D3E370771CA3C7C600A9C333 /* NOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E3707B1CA3C7C600A9C333 /* NOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOSUITests.swift; sourceTree = "<group>"; };
 		D3E3707D1CA3C7C600A9C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NOSToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E3708F1CA3C7FD00A9C333 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D3E370921CA3C7FD00A9C333 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D3E370951CA3C7FD00A9C333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D3E370971CA3C7FD00A9C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E3709F1CA3C8DE00A9C333 /* SonosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +104,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3E3708A1CA3C7FD00A9C333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E370901CA3C7FD00A9C333 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +121,8 @@
 				D3E3705A1CA3C7C600A9C333 /* NOS */,
 				D3E3706F1CA3C7C600A9C333 /* NOSTests */,
 				D3E3707A1CA3C7C600A9C333 /* NOSUITests */,
+				D3E370911CA3C7FD00A9C333 /* NOSToday */,
+				D3E3708E1CA3C7FD00A9C333 /* Frameworks */,
 				D3E370591CA3C7C600A9C333 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +133,7 @@
 				D3E370581CA3C7C600A9C333 /* NOS.app */,
 				D3E3706C1CA3C7C600A9C333 /* NOSTests.xctest */,
 				D3E370771CA3C7C600A9C333 /* NOSUITests.xctest */,
+				D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +143,7 @@
 			children = (
 				D3E3705B1CA3C7C600A9C333 /* AppDelegate.swift */,
 				D3E3705D1CA3C7C600A9C333 /* ViewController.swift */,
+				D3E3709F1CA3C8DE00A9C333 /* SonosController.swift */,
 				D3E3705F1CA3C7C600A9C333 /* Main.storyboard */,
 				D3E370621CA3C7C600A9C333 /* Assets.xcassets */,
 				D3E370641CA3C7C600A9C333 /* LaunchScreen.storyboard */,
@@ -125,6 +170,24 @@
 			path = NOSUITests;
 			sourceTree = "<group>";
 		};
+		D3E3708E1CA3C7FD00A9C333 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E3708F1CA3C7FD00A9C333 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3E370911CA3C7FD00A9C333 /* NOSToday */ = {
+			isa = PBXGroup;
+			children = (
+				D3E370921CA3C7FD00A9C333 /* TodayViewController.swift */,
+				D3E370941CA3C7FD00A9C333 /* MainInterface.storyboard */,
+				D3E370971CA3C7FD00A9C333 /* Info.plist */,
+			);
+			path = NOSToday;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +198,12 @@
 				D3E370541CA3C7C600A9C333 /* Sources */,
 				D3E370551CA3C7C600A9C333 /* Frameworks */,
 				D3E370561CA3C7C600A9C333 /* Resources */,
+				D3E3709E1CA3C7FD00A9C333 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D3E370991CA3C7FD00A9C333 /* PBXTargetDependency */,
 			);
 			name = NOS;
 			productName = NOS;
@@ -181,6 +246,23 @@
 			productReference = D3E370771CA3C7C600A9C333 /* NOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D3E3708C1CA3C7FD00A9C333 /* NOSToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E3709B1CA3C7FD00A9C333 /* Build configuration list for PBXNativeTarget "NOSToday" */;
+			buildPhases = (
+				D3E370891CA3C7FD00A9C333 /* Sources */,
+				D3E3708A1CA3C7FD00A9C333 /* Frameworks */,
+				D3E3708B1CA3C7FD00A9C333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NOSToday;
+			productName = NOSToday;
+			productReference = D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +284,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = D3E370571CA3C7C600A9C333;
 					};
+					D3E3708C1CA3C7FD00A9C333 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = D3E370531CA3C7C600A9C333 /* Build configuration list for PBXProject "NOS" */;
@@ -220,6 +305,7 @@
 				D3E370571CA3C7C600A9C333 /* NOS */,
 				D3E3706B1CA3C7C600A9C333 /* NOSTests */,
 				D3E370761CA3C7C600A9C333 /* NOSUITests */,
+				D3E3708C1CA3C7FD00A9C333 /* NOSToday */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +335,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3E3708B1CA3C7FD00A9C333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E370961CA3C7FD00A9C333 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E370A01CA3C8DE00A9C333 /* SonosController.swift in Sources */,
 				D3E3705E1CA3C7C600A9C333 /* ViewController.swift in Sources */,
 				D3E3705C1CA3C7C600A9C333 /* AppDelegate.swift in Sources */,
 			);
@@ -277,6 +372,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3E370891CA3C7FD00A9C333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E370A11CA3C8DE00A9C333 /* SonosController.swift in Sources */,
+				D3E370931CA3C7FD00A9C333 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = D3E370571CA3C7C600A9C333 /* NOS */;
 			targetProxy = D3E370781CA3C7C600A9C333 /* PBXContainerItemProxy */;
+		};
+		D3E370991CA3C7FD00A9C333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E3708C1CA3C7FD00A9C333 /* NOSToday */;
+			targetProxy = D3E370981CA3C7FD00A9C333 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +416,14 @@
 				D3E370651CA3C7C600A9C333 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D3E370941CA3C7FD00A9C333 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3E370951CA3C7FD00A9C333 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS;
@@ -410,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS;
@@ -465,6 +584,28 @@
 			};
 			name = Release;
 		};
+		D3E3709C1CA3C7FD00A9C333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NOSToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.NOSToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D3E3709D1CA3C7FD00A9C333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NOSToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.NOSToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -498,6 +639,14 @@
 			buildConfigurations = (
 				D3E370871CA3C7C600A9C333 /* Debug */,
 				D3E370881CA3C7C600A9C333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3E3709B1CA3C7FD00A9C333 /* Build configuration list for PBXNativeTarget "NOSToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3709C1CA3C7FD00A9C333 /* Debug */,
+				D3E3709D1CA3C7FD00A9C333 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
