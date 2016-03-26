@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="NOSToday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Sonos_Remote_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdl-1B-edR">
-                                <rect key="frame" x="178" y="4" width="30" height="30"/>
-                                <state key="normal" title="Up">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjy-qK-rpR">
+                                <rect key="frame" x="94" y="10" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="upButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="M9T-6B-cib"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjy-qK-rpR">
-                                <rect key="frame" x="104.5" y="4" width="39" height="30"/>
-                                <state key="normal" title="Down">
-                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="downButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="6ly-Pd-cYG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj8-2e-QHz">
-                                <rect key="frame" x="155.5" y="8" width="10.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj8-2e-QHz">
+                                <rect key="frame" x="138" y="14" width="44" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="5gt-Wg-hTc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdl-1B-edR">
+                                <rect key="frame" x="196" y="10" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="upButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="M9T-6B-cib"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="jj8-2e-QHz" firstAttribute="centerY" secondItem="Xjy-qK-rpR" secondAttribute="centerY" id="MQp-tW-bGJ"/>
-                            <constraint firstItem="Mdl-1B-edR" firstAttribute="centerY" secondItem="Xjy-qK-rpR" secondAttribute="centerY" id="OeN-Ku-jdI"/>
-                            <constraint firstItem="jj8-2e-QHz" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="UZL-hL-bKb"/>
-                            <constraint firstItem="jj8-2e-QHz" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="dZd-v0-GrK"/>
-                            <constraint firstItem="Mdl-1B-edR" firstAttribute="leading" secondItem="jj8-2e-QHz" secondAttribute="trailing" constant="12" id="g2M-Ml-XYV"/>
-                            <constraint firstItem="jj8-2e-QHz" firstAttribute="leading" secondItem="Xjy-qK-rpR" secondAttribute="trailing" constant="12" id="g9x-5o-6T1"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="jj8-2e-QHz" secondAttribute="bottom" constant="8.5" id="uCN-X0-wQq"/>
+                            <constraint firstItem="Xjy-qK-rpR" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="BN3-Gw-Amy"/>
+                            <constraint firstItem="jj8-2e-QHz" firstAttribute="leading" secondItem="Xjy-qK-rpR" secondAttribute="trailing" constant="14" id="FbK-2R-f7v"/>
+                            <constraint firstItem="Mdl-1B-edR" firstAttribute="leading" secondItem="jj8-2e-QHz" secondAttribute="trailing" constant="14" id="Mtl-eQ-6uv"/>
+                            <constraint firstItem="jj8-2e-QHz" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="dIG-B9-5RW"/>
+                            <constraint firstItem="Mdl-1B-edR" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="mQ8-rV-VKl"/>
+                            <constraint firstItem="jj8-2e-QHz" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="14" id="ra0-Ff-RzW"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="jj8-2e-QHz" secondAttribute="bottom" priority="999" constant="15" id="yoR-Lk-0UR"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -57,7 +72,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="37"/>
+                    <size key="freeformSize" width="320" height="50"/>
                     <connections>
                         <outlet property="downButton" destination="Xjy-qK-rpR" id="YCY-5L-EBV"/>
                         <outlet property="upButton" destination="Mdl-1B-edR" id="Mh8-Ju-LLZ"/>
@@ -66,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="285"/>
+            <point key="canvasLocation" x="516" y="284.5"/>
         </scene>
     </scenes>
 </document>

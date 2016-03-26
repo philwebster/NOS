@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242C7F671CA61D1B00F51895 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242C7F651CA61D1B00F51895 /* Interface.storyboard */; };
+		242C7F691CA61D1B00F51895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242C7F681CA61D1B00F51895 /* Assets.xcassets */; };
+		242C7F701CA61D1B00F51895 /* Sonos Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 242C7F6F1CA61D1B00F51895 /* Sonos Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		242C7F771CA61D1B00F51895 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7F761CA61D1B00F51895 /* InterfaceController.swift */; };
+		242C7F791CA61D1B00F51895 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7F781CA61D1B00F51895 /* ExtensionDelegate.swift */; };
+		242C7F7B1CA61D1B00F51895 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7F7A1CA61D1B00F51895 /* NotificationController.swift */; };
+		242C7F7D1CA61D1B00F51895 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7F7C1CA61D1B00F51895 /* GlanceController.swift */; };
+		242C7F7F1CA61D1B00F51895 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7F7E1CA61D1B00F51895 /* ComplicationController.swift */; };
+		242C7F811CA61D1B00F51895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242C7F801CA61D1B00F51895 /* Assets.xcassets */; };
+		242C7F851CA61D1B00F51895 /* Sonos Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 242C7F631CA61D1B00F51895 /* Sonos Watch.app */; };
+		D3BA0E0B1CA690780082160D /* SonosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3709F1CA3C8DE00A9C333 /* SonosController.swift */; };
 		D3E3705C1CA3C7C600A9C333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3705B1CA3C7C600A9C333 /* AppDelegate.swift */; };
 		D3E3705E1CA3C7C600A9C333 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3705D1CA3C7C600A9C333 /* ViewController.swift */; };
 		D3E370611CA3C7C600A9C333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E3705F1CA3C7C600A9C333 /* Main.storyboard */; };
@@ -17,12 +28,26 @@
 		D3E370901CA3C7FD00A9C333 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E3708F1CA3C7FD00A9C333 /* NotificationCenter.framework */; };
 		D3E370931CA3C7FD00A9C333 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E370921CA3C7FD00A9C333 /* TodayViewController.swift */; };
 		D3E370961CA3C7FD00A9C333 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E370941CA3C7FD00A9C333 /* MainInterface.storyboard */; };
-		D3E3709A1CA3C7FD00A9C333 /* NOSToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3E3709A1CA3C7FD00A9C333 /* Sonos Remote Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3E3708D1CA3C7FD00A9C333 /* Sonos Remote Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3E370A01CA3C8DE00A9C333 /* SonosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3709F1CA3C8DE00A9C333 /* SonosController.swift */; };
 		D3E370A11CA3C8DE00A9C333 /* SonosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3709F1CA3C8DE00A9C333 /* SonosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		242C7F711CA61D1B00F51895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E370501CA3C7C600A9C333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 242C7F6E1CA61D1B00F51895;
+			remoteInfo = "Sonos Watch Extension";
+		};
+		242C7F831CA61D1B00F51895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E370501CA3C7C600A9C333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 242C7F621CA61D1B00F51895;
+			remoteInfo = "Sonos Watch";
+		};
 		D3E3706D1CA3C7C600A9C333 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D3E370501CA3C7C600A9C333 /* Project object */;
@@ -47,13 +72,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		242C7F8B1CA61D1B00F51895 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				242C7F701CA61D1B00F51895 /* Sonos Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		242C7F8D1CA61D1B00F51895 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				242C7F851CA61D1B00F51895 /* Sonos Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D3E3709E1CA3C7FD00A9C333 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D3E3709A1CA3C7FD00A9C333 /* NOSToday.appex in Embed App Extensions */,
+				D3E3709A1CA3C7FD00A9C333 /* Sonos Remote Today.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +108,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D3E370581CA3C7C600A9C333 /* NOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		242C7F631CA61D1B00F51895 /* Sonos Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonos Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		242C7F661CA61D1B00F51895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		242C7F681CA61D1B00F51895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		242C7F6A1CA61D1B00F51895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242C7F6F1CA61D1B00F51895 /* Sonos Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sonos Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		242C7F751CA61D1B00F51895 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		242C7F761CA61D1B00F51895 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		242C7F781CA61D1B00F51895 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		242C7F7A1CA61D1B00F51895 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		242C7F7C1CA61D1B00F51895 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		242C7F7E1CA61D1B00F51895 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		242C7F801CA61D1B00F51895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		242C7F821CA61D1B00F51895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E370581CA3C7C600A9C333 /* Sonos Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonos Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E3705B1CA3C7C600A9C333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E3705D1CA3C7C600A9C333 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3E370601CA3C7C600A9C333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +134,7 @@
 		D3E370771CA3C7C600A9C333 /* NOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E3707B1CA3C7C600A9C333 /* NOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOSUITests.swift; sourceTree = "<group>"; };
 		D3E3707D1CA3C7C600A9C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NOSToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E3708D1CA3C7FD00A9C333 /* Sonos Remote Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sonos Remote Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E3708F1CA3C7FD00A9C333 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		D3E370921CA3C7FD00A9C333 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		D3E370951CA3C7FD00A9C333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -83,6 +143,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		242C7F6C1CA61D1B00F51895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D3E370551CA3C7C600A9C333 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +182,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		242C7F641CA61D1B00F51895 /* Sonos Watch */ = {
+			isa = PBXGroup;
+			children = (
+				242C7F651CA61D1B00F51895 /* Interface.storyboard */,
+				242C7F681CA61D1B00F51895 /* Assets.xcassets */,
+				242C7F6A1CA61D1B00F51895 /* Info.plist */,
+			);
+			path = "Sonos Watch";
+			sourceTree = "<group>";
+		};
+		242C7F731CA61D1B00F51895 /* Sonos Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				242C7F761CA61D1B00F51895 /* InterfaceController.swift */,
+				242C7F781CA61D1B00F51895 /* ExtensionDelegate.swift */,
+				242C7F7A1CA61D1B00F51895 /* NotificationController.swift */,
+				242C7F7C1CA61D1B00F51895 /* GlanceController.swift */,
+				242C7F7E1CA61D1B00F51895 /* ComplicationController.swift */,
+				242C7F801CA61D1B00F51895 /* Assets.xcassets */,
+				242C7F821CA61D1B00F51895 /* Info.plist */,
+				242C7F741CA61D1B00F51895 /* Supporting Files */,
+			);
+			path = "Sonos Watch Extension";
+			sourceTree = "<group>";
+		};
+		242C7F741CA61D1B00F51895 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				242C7F751CA61D1B00F51895 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D3E3704F1CA3C7C600A9C333 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +222,8 @@
 				D3E3706F1CA3C7C600A9C333 /* NOSTests */,
 				D3E3707A1CA3C7C600A9C333 /* NOSUITests */,
 				D3E370911CA3C7FD00A9C333 /* NOSToday */,
+				242C7F641CA61D1B00F51895 /* Sonos Watch */,
+				242C7F731CA61D1B00F51895 /* Sonos Watch Extension */,
 				D3E3708E1CA3C7FD00A9C333 /* Frameworks */,
 				D3E370591CA3C7C600A9C333 /* Products */,
 			);
@@ -130,10 +232,12 @@
 		D3E370591CA3C7C600A9C333 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3E370581CA3C7C600A9C333 /* NOS.app */,
+				D3E370581CA3C7C600A9C333 /* Sonos Remote.app */,
 				D3E3706C1CA3C7C600A9C333 /* NOSTests.xctest */,
 				D3E370771CA3C7C600A9C333 /* NOSUITests.xctest */,
-				D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */,
+				D3E3708D1CA3C7FD00A9C333 /* Sonos Remote Today.appex */,
+				242C7F631CA61D1B00F51895 /* Sonos Watch.app */,
+				242C7F6F1CA61D1B00F51895 /* Sonos Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,23 +295,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3E370571CA3C7C600A9C333 /* NOS */ = {
+		242C7F621CA61D1B00F51895 /* Sonos Watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3E370801CA3C7C600A9C333 /* Build configuration list for PBXNativeTarget "NOS" */;
+			buildConfigurationList = 242C7F8C1CA61D1B00F51895 /* Build configuration list for PBXNativeTarget "Sonos Watch" */;
+			buildPhases = (
+				242C7F611CA61D1B00F51895 /* Resources */,
+				242C7F8B1CA61D1B00F51895 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				242C7F721CA61D1B00F51895 /* PBXTargetDependency */,
+			);
+			name = "Sonos Watch";
+			productName = "Sonos Watch";
+			productReference = 242C7F631CA61D1B00F51895 /* Sonos Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		242C7F6E1CA61D1B00F51895 /* Sonos Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 242C7F8A1CA61D1B00F51895 /* Build configuration list for PBXNativeTarget "Sonos Watch Extension" */;
+			buildPhases = (
+				242C7F6B1CA61D1B00F51895 /* Sources */,
+				242C7F6C1CA61D1B00F51895 /* Frameworks */,
+				242C7F6D1CA61D1B00F51895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sonos Watch Extension";
+			productName = "Sonos Watch Extension";
+			productReference = 242C7F6F1CA61D1B00F51895 /* Sonos Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D3E370571CA3C7C600A9C333 /* Sonos Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E370801CA3C7C600A9C333 /* Build configuration list for PBXNativeTarget "Sonos Remote" */;
 			buildPhases = (
 				D3E370541CA3C7C600A9C333 /* Sources */,
 				D3E370551CA3C7C600A9C333 /* Frameworks */,
 				D3E370561CA3C7C600A9C333 /* Resources */,
 				D3E3709E1CA3C7FD00A9C333 /* Embed App Extensions */,
+				242C7F8D1CA61D1B00F51895 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				D3E370991CA3C7FD00A9C333 /* PBXTargetDependency */,
+				242C7F841CA61D1B00F51895 /* PBXTargetDependency */,
 			);
-			name = NOS;
+			name = "Sonos Remote";
 			productName = NOS;
-			productReference = D3E370581CA3C7C600A9C333 /* NOS.app */;
+			productReference = D3E370581CA3C7C600A9C333 /* Sonos Remote.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D3E3706B1CA3C7C600A9C333 /* NOSTests */ = {
@@ -246,9 +386,9 @@
 			productReference = D3E370771CA3C7C600A9C333 /* NOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		D3E3708C1CA3C7FD00A9C333 /* NOSToday */ = {
+		D3E3708C1CA3C7FD00A9C333 /* Sonos Remote Today */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3E3709B1CA3C7FD00A9C333 /* Build configuration list for PBXNativeTarget "NOSToday" */;
+			buildConfigurationList = D3E3709B1CA3C7FD00A9C333 /* Build configuration list for PBXNativeTarget "Sonos Remote Today" */;
 			buildPhases = (
 				D3E370891CA3C7FD00A9C333 /* Sources */,
 				D3E3708A1CA3C7FD00A9C333 /* Frameworks */,
@@ -258,9 +398,9 @@
 			);
 			dependencies = (
 			);
-			name = NOSToday;
+			name = "Sonos Remote Today";
 			productName = NOSToday;
-			productReference = D3E3708D1CA3C7FD00A9C333 /* NOSToday.appex */;
+			productReference = D3E3708D1CA3C7FD00A9C333 /* Sonos Remote Today.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -273,6 +413,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = phil;
 				TargetAttributes = {
+					242C7F621CA61D1B00F51895 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					242C7F6E1CA61D1B00F51895 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					D3E370571CA3C7C600A9C333 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -302,15 +448,34 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3E370571CA3C7C600A9C333 /* NOS */,
+				D3E370571CA3C7C600A9C333 /* Sonos Remote */,
 				D3E3706B1CA3C7C600A9C333 /* NOSTests */,
 				D3E370761CA3C7C600A9C333 /* NOSUITests */,
-				D3E3708C1CA3C7FD00A9C333 /* NOSToday */,
+				D3E3708C1CA3C7FD00A9C333 /* Sonos Remote Today */,
+				242C7F621CA61D1B00F51895 /* Sonos Watch */,
+				242C7F6E1CA61D1B00F51895 /* Sonos Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		242C7F611CA61D1B00F51895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242C7F691CA61D1B00F51895 /* Assets.xcassets in Resources */,
+				242C7F671CA61D1B00F51895 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		242C7F6D1CA61D1B00F51895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242C7F811CA61D1B00F51895 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D3E370561CA3C7C600A9C333 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +511,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		242C7F6B1CA61D1B00F51895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BA0E0B1CA690780082160D /* SonosController.swift in Sources */,
+				242C7F7B1CA61D1B00F51895 /* NotificationController.swift in Sources */,
+				242C7F791CA61D1B00F51895 /* ExtensionDelegate.swift in Sources */,
+				242C7F7F1CA61D1B00F51895 /* ComplicationController.swift in Sources */,
+				242C7F771CA61D1B00F51895 /* InterfaceController.swift in Sources */,
+				242C7F7D1CA61D1B00F51895 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D3E370541CA3C7C600A9C333 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,24 +562,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		242C7F721CA61D1B00F51895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 242C7F6E1CA61D1B00F51895 /* Sonos Watch Extension */;
+			targetProxy = 242C7F711CA61D1B00F51895 /* PBXContainerItemProxy */;
+		};
+		242C7F841CA61D1B00F51895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 242C7F621CA61D1B00F51895 /* Sonos Watch */;
+			targetProxy = 242C7F831CA61D1B00F51895 /* PBXContainerItemProxy */;
+		};
 		D3E3706E1CA3C7C600A9C333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3E370571CA3C7C600A9C333 /* NOS */;
+			target = D3E370571CA3C7C600A9C333 /* Sonos Remote */;
 			targetProxy = D3E3706D1CA3C7C600A9C333 /* PBXContainerItemProxy */;
 		};
 		D3E370791CA3C7C600A9C333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3E370571CA3C7C600A9C333 /* NOS */;
+			target = D3E370571CA3C7C600A9C333 /* Sonos Remote */;
 			targetProxy = D3E370781CA3C7C600A9C333 /* PBXContainerItemProxy */;
 		};
 		D3E370991CA3C7FD00A9C333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3E3708C1CA3C7FD00A9C333 /* NOSToday */;
+			target = D3E3708C1CA3C7FD00A9C333 /* Sonos Remote Today */;
 			targetProxy = D3E370981CA3C7FD00A9C333 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		242C7F651CA61D1B00F51895 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242C7F661CA61D1B00F51895 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		D3E3705F1CA3C7C600A9C333 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -429,6 +625,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		242C7F861CA61D1B00F51895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Sonos_Watch_Extension;
+				INFOPLIST_FILE = "Sonos Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		242C7F871CA61D1B00F51895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Sonos_Watch_Extension;
+				INFOPLIST_FILE = "Sonos Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		242C7F881CA61D1B00F51895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Sonos Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		242C7F891CA61D1B00F51895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Sonos Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		D3E3707E1CA3C7C600A9C333 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -609,6 +867,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		242C7F8A1CA61D1B00F51895 /* Build configuration list for PBXNativeTarget "Sonos Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				242C7F881CA61D1B00F51895 /* Debug */,
+				242C7F891CA61D1B00F51895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		242C7F8C1CA61D1B00F51895 /* Build configuration list for PBXNativeTarget "Sonos Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				242C7F861CA61D1B00F51895 /* Debug */,
+				242C7F871CA61D1B00F51895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D3E370531CA3C7C600A9C333 /* Build configuration list for PBXProject "NOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -618,13 +894,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3E370801CA3C7C600A9C333 /* Build configuration list for PBXNativeTarget "NOS" */ = {
+		D3E370801CA3C7C600A9C333 /* Build configuration list for PBXNativeTarget "Sonos Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3E370811CA3C7C600A9C333 /* Debug */,
 				D3E370821CA3C7C600A9C333 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3E370831CA3C7C600A9C333 /* Build configuration list for PBXNativeTarget "NOSTests" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +910,7 @@
 				D3E370851CA3C7C600A9C333 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3E370861CA3C7C600A9C333 /* Build configuration list for PBXNativeTarget "NOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -641,14 +919,16 @@
 				D3E370881CA3C7C600A9C333 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D3E3709B1CA3C7FD00A9C333 /* Build configuration list for PBXNativeTarget "NOSToday" */ = {
+		D3E3709B1CA3C7FD00A9C333 /* Build configuration list for PBXNativeTarget "Sonos Remote Today" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3E3709C1CA3C7FD00A9C333 /* Debug */,
 				D3E3709D1CA3C7FD00A9C333 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

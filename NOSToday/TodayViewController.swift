@@ -16,11 +16,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var upButton: UIButton!
     
     let sonos = SonosController()
-    var volume = 5
+    var volume: Int = 5 {
+        didSet {
+            dispatch_async(dispatch_get_main_queue(), {
+                self.volumeLabel.text = "\(self.volume)%"
+            })
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        volumeLabel.text = "\(volume)"
+        sonos.getVolume { (volume) in
+            if volume != nil {
+                self.volume = volume!
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,13 +40,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBAction func downButtonTapped(sender: UIButton) {
         volume = volume - 1
-        volumeLabel.text = "\(volume)"
         sonos.setVolume(volume)
     }
     
     @IBAction func upButtonTapped(sender: UIButton) {
         volume = volume + 1
-        volumeLabel.text = "\(volume)"
         sonos.setVolume(volume)
     }
     
@@ -48,6 +56,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's an update, use NCUpdateResult.NewData
 
         completionHandler(NCUpdateResult.NewData)
+    }
+    
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+        return UIEdgeInsetsZero
     }
     
 }
