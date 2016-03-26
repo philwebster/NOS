@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
-   wasCreatedForAppExtension = "YES"
+   LastUpgradeVersion = "0730"
    version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D3E3708C1CA3C7FD00A9C333"
-               BuildableName = "NOSToday.appex"
-               BlueprintName = "NOSToday"
+               BlueprintIdentifier = "242C7F621CA61D1B00F51895"
+               BuildableName = "Sonos Watch.app"
+               BlueprintName = "Sonos Watch"
                ReferencedContainer = "container:NOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,8 +29,22 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D3E370571CA3C7C600A9C333"
-               BuildableName = "NOS.app"
-               BlueprintName = "NOS"
+               BuildableName = "Sonos Remote.app"
+               BlueprintName = "Sonos Remote"
+               ReferencedContainer = "container:NOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "242C7F6E1CA61D1B00F51895"
+               BuildableName = "Sonos Watch Extension.appex"
+               BlueprintName = "Sonos Watch Extension"
                ReferencedContainer = "container:NOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3E3708C1CA3C7FD00A9C333"
-            BuildableName = "NOSToday.appex"
-            BlueprintName = "NOSToday"
+            BlueprintIdentifier = "242C7F621CA61D1B00F51895"
+            BuildableName = "Sonos Watch.app"
+            BlueprintName = "Sonos Watch"
             ReferencedContainer = "container:NOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -58,25 +71,37 @@
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = ""
-      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
-      launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      launchAutomaticallySubstyle = "4"
+      notificationPayloadFile = "Sonos Watch Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/Sonos Remote">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3E370571CA3C7C600A9C333"
-            BuildableName = "NOS.app"
-            BlueprintName = "NOS"
+            BlueprintIdentifier = "242C7F621CA61D1B00F51895"
+            BuildableName = "Sonos Watch.app"
+            BlueprintName = "Sonos Watch"
             ReferencedContainer = "container:NOS.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "242C7F621CA61D1B00F51895"
+            BuildableName = "Sonos Watch.app"
+            BlueprintName = "Sonos Watch"
+            ReferencedContainer = "container:NOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -86,17 +111,29 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
-      launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      launchAutomaticallySubstyle = "4"
+      notificationPayloadFile = "Sonos Watch Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/Sonos Remote">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3E370571CA3C7C600A9C333"
-            BuildableName = "NOS.app"
-            BlueprintName = "NOS"
+            BlueprintIdentifier = "242C7F621CA61D1B00F51895"
+            BuildableName = "Sonos Watch.app"
+            BlueprintName = "Sonos Watch"
             ReferencedContainer = "container:NOS.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "242C7F621CA61D1B00F51895"
+            BuildableName = "Sonos Watch.app"
+            BlueprintName = "Sonos Watch"
+            ReferencedContainer = "container:NOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
