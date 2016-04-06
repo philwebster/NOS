@@ -121,6 +121,10 @@
 		242C7F7E1CA61D1B00F51895 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		242C7F801CA61D1B00F51895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		242C7F821CA61D1B00F51895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D370CBDE1CB4D0E000C02653 /* Sonos Remote Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sonos Remote Today.entitlements"; sourceTree = "<group>"; };
+		D370CBDF1CB4D19800C02653 /* Sonos Remote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sonos Remote.entitlements"; sourceTree = "<group>"; };
+		D370CBE01CB4D1BA00C02653 /* Sonos Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sonos Watch.entitlements"; sourceTree = "<group>"; };
+		D370CBE11CB4D1C400C02653 /* Sonos Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sonos Watch Extension.entitlements"; sourceTree = "<group>"; };
 		D3E370581CA3C7C600A9C333 /* Sonos Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonos Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E3705B1CA3C7C600A9C333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E3705D1CA3C7C600A9C333 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 		242C7F641CA61D1B00F51895 /* Sonos Watch */ = {
 			isa = PBXGroup;
 			children = (
+				D370CBE01CB4D1BA00C02653 /* Sonos Watch.entitlements */,
 				242C7F651CA61D1B00F51895 /* Interface.storyboard */,
 				242C7F681CA61D1B00F51895 /* Assets.xcassets */,
 				242C7F6A1CA61D1B00F51895 /* Info.plist */,
@@ -195,6 +200,7 @@
 		242C7F731CA61D1B00F51895 /* Sonos Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D370CBE11CB4D1C400C02653 /* Sonos Watch Extension.entitlements */,
 				242C7F761CA61D1B00F51895 /* InterfaceController.swift */,
 				242C7F781CA61D1B00F51895 /* ExtensionDelegate.swift */,
 				242C7F7A1CA61D1B00F51895 /* NotificationController.swift */,
@@ -218,6 +224,8 @@
 		D3E3704F1CA3C7C600A9C333 = {
 			isa = PBXGroup;
 			children = (
+				D370CBDF1CB4D19800C02653 /* Sonos Remote.entitlements */,
+				D370CBDE1CB4D0E000C02653 /* Sonos Remote Today.entitlements */,
 				D3E3705A1CA3C7C600A9C333 /* NOS */,
 				D3E3706F1CA3C7C600A9C333 /* NOSTests */,
 				D3E3707A1CA3C7C600A9C333 /* NOSUITests */,
@@ -415,12 +423,30 @@
 				TargetAttributes = {
 					242C7F621CA61D1B00F51895 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V9RH239UZW;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					242C7F6E1CA61D1B00F51895 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V9RH239UZW;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D3E370571CA3C7C600A9C333 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V9RH239UZW;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D3E3706B1CA3C7C600A9C333 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -432,6 +458,12 @@
 					};
 					D3E3708C1CA3C7FD00A9C333 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V9RH239UZW;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -629,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Watch/Sonos Watch.entitlements";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Sonos_Watch_Extension;
 				INFOPLIST_FILE = "Sonos Watch/Info.plist";
@@ -645,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Watch/Sonos Watch.entitlements";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Sonos_Watch_Extension;
 				INFOPLIST_FILE = "Sonos Watch/Info.plist";
@@ -661,10 +695,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Watch Extension/Sonos Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sonos Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -676,10 +714,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Watch Extension/Sonos Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sonos Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -774,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Remote.entitlements";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -786,6 +829,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sonos Remote.entitlements";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = NOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -845,10 +889,14 @@
 		D3E3709C1CA3C7FD00A9C333 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sonos Remote Today.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NOSToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.NOSToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -856,10 +904,14 @@
 		D3E3709D1CA3C7FD00A9C333 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sonos Remote Today.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NOSToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phil.NOS.NOSToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
